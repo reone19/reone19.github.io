@@ -251,8 +251,15 @@ img {
 
 .skill-img {
   width: 60px;
-  height: auto;
+  height: 60px;
+  resize: both;
   margin-right: 20px;
+}
+
+.skill-img > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 
 .skill-body {
@@ -288,8 +295,8 @@ img {
 .profile-body {
   flex: 1;
 }
-
 .profile-body p {
+  color: #000b00;
   font-size: 15px;
   line-height: 1.8;
 }
@@ -316,11 +323,17 @@ img {
  ページトップ
 ---------------------------------*/
 .page-top {
+  border-radius: 50%;
+  box-shadow: 1px 4px 12px 0px #3333;
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  z-index: 1000;
   font-weight: bold;
   padding: 10px;
   cursor: pointer;
   text-align: center;
-  background-color: #000b00;
+  background-color: #666;
 }
 
 .page-top .material-icons-outlined {
@@ -339,7 +352,7 @@ img {
 .copyright {
   font-size: 10px;
   text-align: center;
-  color: #797979;
+  color: #ccc;
 }
 
 /*--------------------------------
@@ -498,9 +511,10 @@ img {
   }
 
   .works-item {
-    flex: 0 0 48%;
+    flex: 0 0 100%;
     margin-right: 0;
     margin-bottom: 30px;
+    /* width: 100vw; */
   }
 
   /* Skill */
