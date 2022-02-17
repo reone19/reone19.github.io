@@ -19,6 +19,13 @@ img {
   border-style: none;
 }
 
+/* 動画のサイズ設定 */
+iframe {
+  max-width: 100%;  
+  height: 400px;
+  vertical-align: bottom;
+  border-style: none;
+}
 
 /*PCサイズ */
 .pc-only {
